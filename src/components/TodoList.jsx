@@ -19,7 +19,6 @@ export default function TodoList({ allTodos, onDelete, onToggleComplete, onEdit 
 
           
 
-            {/* Todo Items */}
             <div className="flex flex-col gap-2">
                 {allTodos.map((todo) => (
                     <TodoItem
