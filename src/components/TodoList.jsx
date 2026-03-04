@@ -12,22 +12,12 @@ export default function TodoList({ allTodos, onDelete, onToggleComplete, onEdit 
         )
     }
 
-    const pending = allTodos.filter(t => !t.isCompleted).length
-    const completed = allTodos.filter(t => t.isCompleted).length
+   
 
     return (
         <div className="w-full max-w-3xl mx-auto px-6 pb-8">
 
-            {/* Stats Row */}
-            <div className="flex items-center justify-between mb-4">
-                <p className="text-xs text-gray-500 font-medium">
-                    {pending} remaining · {completed} completed
-                </p>
-                <span className="text-xs text-gray-600">{allTodos.length} total</span>
-            </div>
-
-            {/* Divider */}
-            <div className="w-full h-px bg-gray-700/50 mb-4" />
+          
 
             {/* Todo Items */}
             <div className="flex flex-col gap-2">

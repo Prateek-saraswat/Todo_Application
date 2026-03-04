@@ -52,7 +52,6 @@ function TodoItem({ todo, onDelete, onToggleComplete, onEdit }) {
                 </span>
             )}
 
-            {/* Action Buttons */}
             {!isEditing && (
                 <div className="flex items-center gap-2">
                     <button
